@@ -18,7 +18,7 @@ function setup(){
     World.add(world,ground);
 
     var ball_options ={
-        restitution: 1.0
+        restitution: 0.2
     }
 
     ball = Bodies.circle(200,100,20, ball_options);
@@ -28,7 +28,7 @@ function setup(){
 }
 
 function draw(){
-    background(0);
+    background("blue");
     Engine.update(engine);
     rectMode(CENTER);
     rect(ground.position.x,ground.position.y,400,20);
